@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sempre Sorrindo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="js/bannerRotativov.js" defer></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="js/swiper.js" defer></script>
+    <script src="https://kit.fontawesome.com/85b597dfe6.js" crossorigin="anonymous"></script>
+    <script src="js/consumoAPI/perguntasGet.js" defer type="module"></script>
+    <script src="js/consumoAPI/perguntasPost.js" defer></script>
+</head>
+<body>
+    <div id="banner">
+        <img class="selected" src="img/dentistaBanner.webp" alt="Image1">
+        <img src="img/banner01.webp" alt="Image2">
+        <img src="img/banner02.webp" alt="Image3">
+        <img src="img/banner03.jpg" alt="Image4">
+        <img src="img/banner04.webp" alt="Image5">
+    <header>
+        <nav>
+            <div id="logo">
+            </div>
+            <div id="container-contato">
+                <p>(48)9 9999-9999</p>
+            </div>
+        </nav>
+        <!-- Titulo -->
+        <section>
+            <div id="container-descricao">
+                <h1>Reabilitamos o seu sorriso em um só lugar, com máximo conforto.</h1>
+                <h4>Clinica odontologica Sempre Sorrindo, porque seu sorriso fica mais feliz com a gente.</h4>
+            </div>
+            <form action="" method="post">
+            <div id="container-formulario"> 
+                <h2>Tire suas dúvidas</h2>
+                <input  class="inserirDados" type="text"  size="20" maxlength="40" value="" id="nome" placeholder="Nome">
+                <input  class="inserirDados" type="text" size="20" maxlength="40" value="" id="email" placeholder="E-mail">
+                <input  class="inserirDados" type="number" size="20" maxlength="40" value="" id="numero" placeholder="DDD + Telefone">
+                <textarea type="text"  size="20" cols="50" rows="7" id="pergunta" placeholder="Como podemos te ajudar?"></textarea>
+                <input class="inserirDados" id="button-enviar" type="submit" value="Enviar">                  
+            </div>
+        </section>
+    </header>
+    </div> 
+    <main>
+        <div id="container-quem-somos" class="reveal">
+            <div id="container-imagem">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="project-img">
+                          <img src="./img/carrossel.jpg" alt="Foto 01">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="project-img">
+                          <img src="./img/banner03.jpg" alt="Foto 02">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="project-img">
+                          <img src="./img/dentistaBanner.webp" alt="Foto 03">
+                        </div>
+                      </div>
+                    </div>
+                  
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div id="container-texto">
+                <h3>Quem Somos?</h3>
+                <p id="txt-quem-somos">Somos uma clínica odontológica, com mais de 25 anos no mercado, Visando sempre buscar inovações para o nosso trabalho e oferecemos total garantia dos nossos serviços ou o seu dinheiro de volta.</p>
+            </div>
+        </div>
+        <div id="container-servicos">
+            <h3>Com este serviço você</h3>
+            <div id="servicos">
+                <div id="left-servicos">
+                    <div class="list-servicos">
+                        <i class="fa-solid fa-comment-medical"></i>
+                        <p class="txt-servicos">Tem um auxílio de um dentista 24 horas por dia para ajudar com qualquer incomodo. </p>
+                    </div>
+                    <div class="list-servicos">
+                        <i class="fa-solid fa-microchip"></i>
+                        <p class="txt-servicos">Conta com um consultório equipado com tecnologia de ponta e máximo conforto. </p>
+                    </div>
+                    <div class="list-servicos">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        <p class="txt-servicos">Tem segurança com seu dinheiro, se o paciente não ficar satisfeito devolvemos seu dinheiro de volta.</p>
+                    </div>
+                    <div class="list-servicos">
+                        <i class="fa-solid fa-tooth"></i>
+                        <p class="txt-servicos">Cuidamos da saúde dos seus dentes, com profissionais dedicados a isso.</p>
+                    </div>
+                </div>
+                <div id="right-servicos">
+                    <div class="list-servicos">
+                        <i class="fa-solid fa-teeth-open"></i>
+                        <p class="txt-servicos">Conta com a clínica número um de São Paulo, especializada em lentes de contato dental e implantodontia.</p>
+                    </div>
+                    <div class="list-servicos">
+                        <i class="fa-solid fa-face-smile-beam"></i>
+                        <p class="txt-servicos">Ganha um novo sorriso, na terceira consulta ganha uma limpeza gratuita.</p>
+                    </div>
+                    <div class="list-servicos">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p class="txt-servicos">Enviamos dicas semanalmente, pelo WhatsApp para cuidar do seu sorriso. </p>
+                    </div>
+                    <div class="list-servicos">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <p class="txt-servicos">Conta com odontologistas de renome na sua área de atuação.</p>
+                    </div>
+                </div>
+            </div>
+            <a href=" https://wa.me/11952866414">
+            <div id="btn-saiba-mais">Saiba Mais</div>
+            </a>
+        </div>
+        <div id="container-perguntas">
+            <h3>Perguntas frequentes</h3>
+            <div id="container-perguntas-enviadas">
+            <div class="perguntas">
+                <p>Onde está localizada sua clínica?</p>
+            </div>
+            <div class="perguntas">
+                <p>Vocês trabalham com lente dental de porcelana?</p>
+            </div>
+            <div class="perguntas">
+                <p>Vocês cobram algum preço na primeira avaliação?</p>
+            </div>
+            </div> 
+        </div>
+        <div id="container-avaliacao">
+            <div id="container-texto-avaliacao">
+                <h5>Não perca seu tempo, agende já sua avaliação!</h5>
+                <p>Desconto especial, na sua primeira consulta ganhe 25% de desconto e uma limpeza gratuita!</p>
+            </div>
+            <div id="container-chamada-avaliacao">
+                <p id="txt-chamada-avaliacao">Nossa equipe está esperando para atendê-los, está esperando oque?  Venha logo e retire suas dúvidas com a gente. </p>
+                <a href=" https://wa.me/11952866414">
+                    <div id="btn-agendar">Contate-nos</div>
+                </a>
+                <p>Aos fins de semana e feriados atendemos das 6hrs até as 18hrs</p>
+            </div>
+        </div>
+        </form>
+    </main>
+    <footer>
+        <p>Sempre Sorrindo &copy Todos os Direitos Reservados - 2022 </p>
+        <p>CNPJ 952866414 - 889089• TERMOS DE USO</p>
+
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', reveal);
+  
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+          
+          for(var i = 0; i < reveals.length; i++){
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+  
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+            else{
+              reveals[i].classList.remove('active');
+            }
+          }
+        }
+      </script>
+</body>
+</html>

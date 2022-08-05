@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+:root {
+    --bg-color: #FFF;
+    --primary-color: #040D39;
+    --sucundary-color: #2171a3;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    /* 2690px */
+    display: flex;
+    flex-direction: column;
+}
+
+#banner {
+    width: inherit;
+    height: 95vh;
+    position: relative;
+}
+
+#banner img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    transition: opacity 800ms;
+}
+
+#banner img.selected { 
+    opacity: 1;
+}
+
+header{
+    width: inherit;
+    height: inherit;
+    background-color:rgba(161, 211, 240, 0.87);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+nav{
+    height: 140px;
+    width: inherit;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo{
+    height: 140px;
+    width: 140px;
+    background-color: aqua;
+    background: url(../img/logo.png) no-repeat center center;
+    background-size:cover; 
+}
+
+#container-contato{
+    background-color: #dfe2eb;
+    height: 50px;
+    width: 180px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: inherit;
+    height: auto;
+    padding: 0% 20% 0% 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    
+}
+
+#container-descricao{
+    display: block;
+    width: 470px;
+   
+}
+
+@media only screen and (max-width:800px) {
+    #container-descricao{
+        display: none;
+        visibility: hidden;
+    }
+    #banner img{
+        width: 100%;
+        height: 90vh;
+    }
+}
+
+h1{
+    font-size: 2.7em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+h4{
+    color: var(--sucundary-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+}
+
+/* FORMULARIO */
+
+#container-formulario{
+    height: 500px;
+    width: 350px;
+    background-color: #dfe2eb;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+h2{
+    font-size: 1.8em;
+    color:var(--primary-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inserirDados{
+    height: 45px;
+    width: 300px;
+    border-radius: 5px;
+    border-color:  var(--primary-color);
+    padding: 3px;
+    margin-block: 10px;
+    font-size: 1.2rem;
+}
+
+textarea{
+    resize: none;
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color:  var(--primary-color);
+    font-size: 1.2rem;
+}
+
+#txtDuvidas{
+    width: 300px;
+    height: 130px;
+    padding: 3px;
+    border-radius: 5px;
+    border-color:  var(--primary-color);
+    border-width: 2px;
+    margin-block: 10px;
+}
+
+#button-enviar{
+    height: 45px;
+    width: 300px;
+    border-radius: 5px;
+    background-color:  var(--primary-color);
+    color: #dfe2eb;
+    font-size:1.5em;
+}
+
+/* FIM FORMULARIO */
+
+main{
+    width: inherit;
+    height: auto;
+    background-color:  aliceblue;
+    /* margin-top:10vh */
+}
+
+#container-quem-somos{
+    display: flex;
+    flex-direction: row;
+    padding: 7%;
+    justify-content: space-between;
+    background-color: #FFF;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#txt-quem-somos{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    width: 80%;
+    text-align: justify;
+}
+
+#container-imagem{
+    height: 39vh;
+    max-width: 33vw;
+    width: 100%;
+    border-radius: 7px;
+    align-self: flex-start;
+}
+
+
+img {
+    box-shadow: 0 1px 2px #0003;
+    width: 100%;
+  }
+  
+  .swiper {
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 100%) {
+    .swiper {
+      height: 350px;
+    }
+  }
+
+#container-texto{
+    width: 43vw;
+    height: 33vh;
+    align-self: flex-end;
+    align-self: center;
+}
+
+.reveal{
+    position: relative;
+    left:200px;
+    transition: all 2s ease;
+    opacity: 0;
+  }
+  .reveal.active{
+      opacity: 1;
+      left: 0px;
+  }
+
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+
+#container-servicos{
+    height: auto;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 45px;
+    background: url(../img/img-de-fundo.webp) center center no-repeat;
+    background-size: cover;
+}
+
+#servicos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+#left-servicos{
+    height: 350px;
+    width: 43vw;
+    background-color: rgba(255, 255, 255, 0.43);;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-servicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.txt-servicos{
+    width: 88%;
+    font-size: 1.2rem;
+}
+
+i{
+    color: #2171a3;
+
+    font-size: 50px;
+}
+
+#right-servicos{
+    height: 350px;
+    width: 43vw;
+    background-color: rgba(255, 255, 255, 0.43);;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#btn-saiba-mais{
+    height: 50px;
+    width: 300px;
+    background-color: #2171a3;
+    border-radius: 8px;
+    border: #2171a3;
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:800px) {
+    #servicos{
+        grid-template-columns: 1fr;
+    }
+
+    #left-servicos{
+        width: 90vw;
+    }
+
+    #right-servicos{
+        width: 90vw;
+    }
+    main{
+        margin-top: -5%;
+    }
+    #container-quem-somos{
+        height: auto;
+        flex-direction:column-reverse;
+    }
+
+    #txt-quem-somos{
+        font-size: 1.2em;
+        width: 90%;
+    }
+
+    .swiper{
+        width: 90vw;
+    }
+
+    #container-texto{
+        width: 95%;
+    }
+}
+
+#container-perguntas{
+    max-height: auto;
+    min-height: 350px;
+    width: inherit;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 80px;
+    /* position: absolute; */
+}
+
+.perguntas{
+    width: 60vw;
+    height: 50px;
+    border: 1.7px solid ;
+    border-color:  var(--primary-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 14px;
+    padding: 10px;
+}
+
+#container-avaliacao{
+    height: 350px;
+    width: inherit;
+    background-color: #1b9cfd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--bg-color);
+}
+
+h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.1em;
+    color: var(--bg-color);
+    margin-bottom: 10px;
+   
+
+}
+
+#container-texto-avaliacao{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+#container-chamada-avaliacao{
+    height: 30vh;
+    width: 45vw;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    margin-top: 2px;
+    text-align: center;
+}
+
+#txt-chamada-avaliacao{
+    width: 90%;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+#btn-agendar{
+    height: 50px;
+    width: 300px;
+    border-radius: 8px;
+    background-color: #1b9cfd;
+    margin: 6px;
+    color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    
+}
+
+footer{
+    height: 100px;
+    width: inherit;
+    background-color:var(--primary-color);
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width:800px) {
+    #container-avaliacao{
+        flex-direction: column;
+    }
+    #container-chamada-avaliacao{
+        width: 90vw;
+    }
+
+    body{height:auto}
+
+    #container-texto-avaliacao{
+        width:90%
+    }
+
+    h5{
+        font-size: 1.5rem;
+    }
+
+    .perguntas{
+        height: 60px;
+    }
+
+
+}
+
+
+
